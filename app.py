@@ -1,6 +1,7 @@
 #importing essentiaal libraries
 
 from flask import Flask, render_template, request
+from sklearn.cluster import KMeans
 import pickle
 
 

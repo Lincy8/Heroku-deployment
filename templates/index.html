@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta  charset="utf-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1">
+    <title>CUSTOMER TYPE</title>
+    <style >
+        button
+        {
+            padding :10 px;
+            background-color: red;
+            font-size: 20px;
+        }
+       
+    </style>
+    </head>
+<body>
+    <body bgcolor = "Yellow">
+    <body text= "red">
+   
+    <h1><b> Customer Type</b></h1>
+    <div class="container-fluid bg-1 text-center">
+        
+    </div>
+    <form action="{{ url_for('predict')}}"method="post">
+      <div class="form-group">
+   <b>This insight machine will help to understand the customer purchase according to its segmentation</b>
+   <div class="form-group">
+    <label for="Recency"><b>Recent date of puchance .</b></label>
+    <input type="text" class="form-control" name="Recency" id="Recency" placeholder="Recent days eg.2" required="required">
+  </div>
+  <div class="form-group">
+    <label for="frequency"><b>Total no. of purchase.</b>.</label>
+    <input type="text" class="form-control"  name="frequency" id="frequency" placeholder="Total purchases. e.g 4" required="required">
+  </div>
+  <div class="form-group">
+    <label for="Monetory"><b>Revenue Of Customer.</b></label>
+    <input type="text" class="form-control" name="Monetory" id="Monetory" placeholder="Revenue of customer. e.g 200" required="required">
+  </div>
+ 
+   <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </div>
+  </form>
+  
+{{ prediction_text }}
+  
+
+  <footer class="container-fluid bg-4 text-center">
+  <p>Thanks to <a href="https://www.boardinfinity.com">BoardInfinity</a></p>
+  <p class='footer-description'>Made by Lincy Skariah.</p>
+  <div class="contact" >
+    <a target="_blank" href=""><i class="fab fa-github fa-lg contact-icon" style="color:blanchedalmond !important"></i></a>
+    <a target="_blank" href=""><i class="fab fa-linkedin fa-lg contact-icon" style="color:blanchedalmond !important"></i></a>
+   </div>
+  
+</footer>
+
+</body>
+
+
+
+</html>
+

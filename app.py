@@ -1,6 +1,9 @@
 #importing essentiaal libraries
 
+import numpy as np
+import pandas as pd
 from flask import Flask, render_template, request
+from sklearn.metrics import silhouette_score
 from sklearn.cluster import KMeans
 import pickle
 

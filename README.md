@@ -1,2 +1,2 @@
 # Heroku-deployment
-https://customerse.herokuapp.com/predict
+ https://customerse.herokuapp.com/ 
